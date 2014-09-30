@@ -132,7 +132,9 @@
 
 - (void)sendFeedback
 {
-    CCFeedback *feedback = [[CCFeedback alloc] initWithApp:@"peg" label:nil content:self.textView.text];
+    
+    NSString *app = [[NSBundle mainBundle] bundleIdentifier];
+    CCFeedback *feedback = [[CCFeedback alloc] initWithApp:app label:nil content:self.textView.text];
     feedback.userInfo = self.userInfo;
     
     CCFeedbackManager *fm = [[CCFeedbackManager alloc] init];
