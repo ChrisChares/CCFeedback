@@ -10,7 +10,7 @@
 #define COCOAPODS_POD_AVAILABLE_CCFeedback
 #define COCOAPODS_VERSION_MAJOR_CCFeedback 0
 #define COCOAPODS_VERSION_MINOR_CCFeedback 1
-#define COCOAPODS_VERSION_PATCH_CCFeedback 0
+#define COCOAPODS_VERSION_PATCH_CCFeedback 2
 
 // ChameleonFramework
 #define COCOAPODS_POD_AVAILABLE_ChameleonFramework

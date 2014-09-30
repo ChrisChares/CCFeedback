@@ -12,6 +12,7 @@
 #import <Chameleon.h>
 #import "CCFeedback.h"
 #import "CCFeedbackManager.h"
+#import "CCFeedbackNavigationController.h"
 
 @interface CCFeedbackViewController ()
 
@@ -173,13 +174,13 @@
 
 + (UINavigationController *)feedbackControllerInNavigationController
 {
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[CCFeedbackViewController feedbackController]];
+    CCFeedbackNavigationController *nav = [[CCFeedbackNavigationController alloc] initWithRootViewController:[CCFeedbackViewController feedbackController]];
     return nav;
 }
 
 + (UINavigationController *)feedbackControllerInNavigationControllerWithUserInfoDictionary:(NSDictionary *)userInfo
 {
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[CCFeedbackViewController feedbackControllerWithUserInfoDictionary:userInfo]];
+    CCFeedbackNavigationController *nav = [[CCFeedbackNavigationController alloc] initWithRootViewController:[CCFeedbackViewController feedbackControllerWithUserInfoDictionary:userInfo]];
     return nav;
     
 }

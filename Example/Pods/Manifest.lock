@@ -1,5 +1,5 @@
 PODS:
-  - CCFeedback (0.1.0):
+  - CCFeedback (0.1.2):
     - ChameleonFramework (~> 1.1.1)
     - FontAwesomeKit (~> 2.1.8)
     - MBProgressHUD (~> 0.9)
@@ -39,7 +39,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  CCFeedback: 7611ed55deeed710979da3d991e24760bb184627
+  CCFeedback: 4ab818ecf51d5b0e50d00324a4c9242b0ac7cacf
   ChameleonFramework: c60096686e3771f5d78f26cfbfd08955a8a88cbd
   Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
   Expecta+Snapshots: 30c28e3d8104665ee70e32df1cfc030bb37a8a6c

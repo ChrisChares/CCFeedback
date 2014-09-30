@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "CCFeedback"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "Library for sending feedback from iOS app to server"
 # s.description      = <<-DESC
 #                      An optional longer description of CCFeedback
