@@ -7,6 +7,7 @@
 //
 
 #import "CCViewController.h"
+#import <CCFeedback/CCFeedback.h>
 
 @interface CCViewController ()
 
@@ -24,6 +25,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (IBAction)goFeedback:(id)sender {
+    
+    UINavigationController *feedbackNav = [CCFeedbackViewController feedbackControllerInNavigationController];
+    [self presentViewController:feedbackNav animated:YES completion:NULL];
 }
 
 @end

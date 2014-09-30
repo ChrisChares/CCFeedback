@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CCFeedbackViewController">
+            <connections>
+                <outlet property="label" destination="ImL-vY-70K" id="7Ed-5I-ZYc"/>
+                <outlet property="textView" destination="X1B-3o-FaK" id="b1b-El-nSH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X1B-3o-FaK">
+                    <rect key="frame" x="8" y="8" width="584" height="584"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="400" id="C36-IN-eRl"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="400" id="bD4-zB-zcq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="C36-IN-eRl"/>
+                            <exclude reference="bD4-zB-zcq"/>
+                        </mask>
+                    </variation>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImL-vY-70K">
+                    <rect key="frame" x="140" y="260" width="320" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="b5n-rs-ZeC"/>
+                        <constraint firstAttribute="height" constant="80" id="oAH-YA-cU1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                    <color key="textColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="X1B-3o-FaK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="5CC-1G-zof"/>
+                <constraint firstAttribute="bottom" secondItem="X1B-3o-FaK" secondAttribute="bottom" constant="8" id="R5m-UG-nh7"/>
+                <constraint firstAttribute="trailing" secondItem="X1B-3o-FaK" secondAttribute="trailing" constant="8" id="R88-AL-oKB"/>
+                <constraint firstAttribute="bottom" secondItem="X1B-3o-FaK" secondAttribute="bottom" constant="8" id="a5c-lZ-DIJ"/>
+                <constraint firstAttribute="centerX" secondItem="ImL-vY-70K" secondAttribute="centerX" id="fJ3-do-OIF"/>
+                <constraint firstItem="X1B-3o-FaK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="gWU-z5-VzK"/>
+                <constraint firstAttribute="centerY" secondItem="ImL-vY-70K" secondAttribute="centerY" id="otC-G2-49z"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="a5c-lZ-DIJ"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="249" y="170"/>
+        </view>
+    </objects>
+</document>
